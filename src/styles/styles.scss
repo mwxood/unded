@@ -1,0 +1,67 @@
+$primary-color: #D1392C;
+$secondary-color: #fff;
+$bg-color: #1F1F1F;
+$banner-color: #ff4a3b;
+$border-color: #414141;
+$services-color: #232323;
+$services-border-color: #393939;
+$services-table-color: #828282;
+$footer-bg-color: #262626;
+$container-width: 1776px;
+$testimonial-width: 1045px;
+$custom-width: 1297px;
+
+$headings-font: "Italiana", sans-serif;
+$default-font: "Space Mono", monospace;
+
+
+@import 'helpers';
+@import 'header';
+@import 'navigation';
+@import 'search';
+@import 'banner';
+@import 'info-holder';
+@import 'portolio-holder';
+@import 'slider-holder';
+@import 'partners';
+@import 'services';
+@import 'articles';
+@import 'footer';
+@import 'responsive';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background: $bg-color;
+    font-family: $default-font;
+    color: $secondary-color;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font;
+    font-weight: 400;
+}
+
+.container {
+    max-width: $container-width;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container-md {
+    max-width: $custom-width;
+    padding: 0 20px;
+    margin: 0 auto;
+}
